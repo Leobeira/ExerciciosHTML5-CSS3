@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+    <style>body{background-color: rgb(184, 175, 161);}</style>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no GitHub</a></p> <!--Esta tag a é de âncora para fazermos a referência de um link, e precisamos colocar este target blank e o rel external para mostar que o link é externo e não sobrepor a sua página da internet, abrindo o site numa nova aba. Agora sem esses taget e rel, veremos à seguir cujo link irá sobrepor a sua página, o que não é bom para o seu negócio.--> 
+
+    <p>Você também pode acessar <a href="https://www.youtube.com/@CursoemVideo">meu canal gratuíto no Youtube </a></p>
+
+    <h2>Usando Links Internos</h2> <!-- Usamos quando queremos direcionar um link que está dentro do nosso próprio servidor e condiz com a nossa própria página. Primeiramente vamos criar um outro arquivo no nosso explorador no nosso ex010 com o nome pag002.html -->
+    <p>Esta é a primeira página do site. Se você quiser também acessar a minha <a href="pag002.html" rel="next" target="_self"> segunda página.</a></p> <!--Segura ctrl espaço que ele abre tudo que você tem na sua pasta.-->
+    <!-- Importante deixar o rel next(próximo) para você definir que esta é a página posteior, para que o google não decida por ele qual é.-->
+
+    <p>Você também pode acessar a nossa <a href="Noticias/pag003.html" rel="next" target="_self">página de notícias.</a></p> <!--Sempre lembrar de clica em ctrl espaço para abrir a pasta nova criada agora e depois indicar o link no caso, pag003-->
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="Livro/Enviroment.pdf" target="_blank">Abrir o livro em pdf.</a></li>
+        <li><a href="Livro/Enviroment.pdf" download="Enviroment.pdf">  Baixar o livro em pdf.</a></li>
+        <li><a href="Livro.zip" download="Livro/zip"> baixar livro em zip.</a></li>        
+    </ul>
+</body>
+</html>

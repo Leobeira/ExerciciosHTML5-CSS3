@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <style>body{background-color: rgb(231, 187, 133);}</style>
+
+    <style>
+        dd {
+            margin-bottom: 1em;
+        }
+    </style> <!-- Usado para fazer pular linha a cada tag finalizada com dd (descrição) mostrada no final do código-->
+    
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas ordenadas</h2>
+    <!--
+    1- Acordar
+    2- Ligar para o João
+    2- Tomar café
+    3- Escovar os dentes
+    4- Lavar roupa 
+se fizermos isso e errarmos a ordem ou quisermos adicionar mais ítens, teremos problema. Então devemos usar a tag ol (order list) e depois usar a tag li(list iten)-->
+<ol>
+<li>Acordar</li>
+<li>Tomar café</li>
+<li>Ligar para o João</li>
+<li>Escovar os dentes</li>
+<li>Lavar roupas</li>
+<!-- Porém o HTML 5 te dá opção de não precisar fechar a barra do li (APENAS DO LI), podendo deixar a lista assim: -->
+<li>Se trocar
+<li>Pegar a chave do carro
+<li>Verificar se pegou tudo
+<li>Sair de casa
+<li>Trancar a porta
+</ol> 
+
+<!--Também podemos personalizar a lista de numeração usando após a tag ol o type para o tipo e também caso quisermos começar por outro número que não seja 1, colocamos após o type o start.-->
+<ol type="A" start="4"> <!--Neste caso escolhemos o tipo letras e começando na letra D, mas o ol não aceita letra como parâmetro de mudança, mas sim qual a posição numérica que essa letra se encontra no alfabeto. Por exemplo, se quisermos começar com a letra D, então colocamos start="4", que é a posição da letra D no alfabeto-->
+    <li>Acordar</li>
+    <li>Tomar café</li>
+    <li>Escovar os dentes</li>
+    <li>Tomar banho</li>
+
+</ol>
+
+<h2>Listas não ordenadas</h2>
+<!-- Essas são as Unorder Lista ou (ul) que você não precisa ordenar elas em números ou letras.-->
+<ul>
+    <li>Pão</li>
+    <li>Leite</li>
+    <li>Queijo</li>
+    <li>Manteiga</li>
+    <li>Ovos</li>
+</ul>
+
+<!--Também temos a opção type para deixar como círculos, discos etc-->
+<ul type="circle">
+    <li>Pão</li>
+    <li>Leite</li>
+    <li>Queijo</li>
+    <li>Manteiga</li>
+    <li>Ovos</li>
+</ul>
+<ul type="square"> <!-- Disc, Square e Circle-->
+    <li>Pão</li>
+    <li>Leite</li>
+    <li>Queijo</li>
+    <li>Manteiga</li>
+    <li>Ovos</li>
+</ul>
+
+<h2>Juntando Listas 1.0</h2>
+<h3>Minhas linguagens favoritas</h3>
+<ol>
+    <li>Antigas</li> <!-- Então fazemos um aninhamento-->
+    <ol type="a">
+        <li>Cliper</li>
+        <li>Visual Basic</li>
+        <li>Fortram</li>
+        <li>Deplhi</li>
+    </ol>
+
+    <li>Novas</li>
+    <ol type="i">
+        <li>PHP</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>Java Script</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Kotlin</li>        
+    </ol>
+</ol>
+<!--Uma dica: para selecionar várias tags ao mesmo tempo e mudá-las todas ao mesmo tempo, pressione alt e vai selecionando com o mouse as tags que deseja mudar.-->
+<h2>Meus jogos favoritos</h2>
+<ol>
+    <li>The Witcher</li>
+    <ul>
+        <li>Mages</li>
+        <li>Skellige</li>
+        <li>Legendary Hunt</li>
+        <ul type="circle">
+            <li>Todos os monstros miniaturas</li>
+        </ul>
+    </ul>
+    <li>Legend of Andor</li>
+    <ul>
+        <li>Last Hope</li>
+        <li>Pietburg</li>
+    </ul>
+    <li>Ankh</li>
+    <ul>
+        <li>Pharaoh</li>
+        <li>Pantheon</li>
+    </ul>
+    <li>Root</li>
+    <ul>
+        <li>Ribeirinhos</li>
+        <li>Corvídeos</li>
+    </ul>
+</ol>
+
+<h2>Lista de Definições</h2> <!--DL-->
+<dl>
+    <dt>HTML</dt> <!--Termo-->
+
+    <dd>Linguagem de marcação para a criação do conteúdo para um site.</dd> <!--Descrição-->
+
+    <dt>CSS</dt>
+    <dd>Linguagem de marcação para a criação do design de um site.</dd>
+
+    <dt>JavaScript</dt>
+    <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+</dl>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+ex001 - iniciando html
+
+ex002 - Parágrafos e quebras de linhas
+Você pode escrever um parágrafo de qualquer jeito, basta colocar tudo no meio do par de tegs <p> e </p>
+
+Se você precisar quebrar o parágrafo em qualquer lugar do texto, como este,
+basta você usar a tag <br>.
+
+Vamos adicionar alguns símbolos especiais: ® © ™ € £ ℜ δ Δ ↑ ↓ ↕ ← →
+
+Agora vamos adicionar os emojis: 💪 😀 👍
+
+ex003 - Testando cargas de imagens
+ Imagem que está na mesma pasta.
+ Carregar pastas que estão em subpastas.
+ Carregar imagens externas.
+
+
+ex004 - Adicionando Favicon na aba do site
+link rel="shortcut icon"
+
+LEMBRANDO QUE PARA EMPACOTAR UM TEXTO OU PARÁGRAO SELECIONAMOS O QUE QUEREMOS, CTRL SHIFT P, e para selecionar algo entre "" pressionamos CTRL Espaço, e para criarmos o corpo do html pressionamos SHIFT ! ...
+
+ex005 - PASTA VAZIA
+
+ex006 - Títulos e subtítulos
+
+ex007 - Usando background e adress para destacar
+
+ex008 - Formatação (Negrito, Itálico, Normal, fonte, tamanho, carcar texto)
+
+ex008b - Código Fonte 
+O comando document.getElementById quando escrito com o comando code, como mostrado em seguida, document.getElementById('teste'), é escrito em linguagem JavaScript.
+<style>
+        body {
+            background-color: rgb(204, 170, 119);
+        } 
+        mark {
+            background-color: blue;
+        }
+        .colored-text {
+        color: blue; /* Substitua 'blue' pela cor que você deseja */
+        }
+        .much-bigger {
+            font-size: 2em;
+        }    
+        .bigger{font-size: 1.5em;
+        }        
+        .highlight {
+            background-color: rgb(26, 153, 111);
+        }
+        </style> <!--Colocando cor de fundo, marcar texto colorindo o fundo do texto, colorir as palavras ou letras e ajustar tamanho da palavra selecionada, respectivamente-->
+
+ex009 - Trabalhando com Listas
+Listas ordenadas e não ordenadas
+Juntando Listas
+<style>
+        dd {
+            margin-bottom: 1em;
+        }
+    </style> <!-- Usado para fazer pular linha a cada tag finalizada com dd (descrição) mostrada no final do código-->
+
+<ol>
+<li>Acordar</li>
+<li>Tomar café</li>
+<li>Ligar para o João</li>
+<li>Escovar os dentes</li>
+<li>Lavar roupas</li>
+<!-- Porém o HTML 5 te dá opção de não precisar fechar a barra do li (APENAS DO LI), podendo deixar a lista assim: -->
+<li>Se trocar
+<li>Pegar a chave do carro
+<li>Verificar se pegou tudo
+<li>Sair de casa
+<li>Trancar a porta
+</ol> 
+
+<ul type="circle">
+    <li>Pão</li>
+    <li>Leite</li>
+    <li>Queijo</li>
+    <li>Manteiga</li>
+    <li>Ovos</li>
+</ul>
+
+ex010 -Usando links externos
+Usando Links Internos
+Usando links externos
+Você pode acessar o meu repositório público no GitHub
+
+Você também pode acessar meu canal gratuíto no Youtube
+
+Usando Links Internos
+Esta é a primeira página do site. Se você quiser também acessar a minha segunda página.
+
+Você também pode acessar a nossa página de notícias.
+
+Links para download
+Abrir o livro em pdf.
+Baixar o livro em pdf.
+baixar livro em zip.
+
+ex011 - Criando Imagens Dinâmicas
+Reduzir gradativamente a imagem sem pular da maior para a menor.
+Repruduzindo mídia de áudio
+
+ex012 - Inserindo vídeos hospedados localmente
+Deixando o fundo com uma foto
+Site com imagem transparente
+Para deixar a imagem transparente sem precisar mexer no editor de imagens.
+
+ex013 - Estilos inline
+style="background-color: blanchedalmond;"> <!--Esse é exemplo de CSS-->
+
+ex013b - <style>
+        body{
+            background-color: rgb(193, 193, 244);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;            
+        }
+
+        h1{
+            color: blue;
+        }
+
+        h2{
+            color: rgb(1, 124, 124);
+        }
+        
+        p{
+            text-align: justify;
+        }
+
+ex013c - @charset "UTF8";
+/*Este código acima, é uma regra para caso exista algum problema com caracteres*/
+
+
+
+body{
+    background-color: rgb(193, 193, 244);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;            
+}
+
+h1{
+    color: blue;
+}
+
+h2{
+    color: rgb(1, 124, 124);
+}
+
+p{
+    text-align: justify;
+}
+
+/*Este é o melhor estilo para trabalhar em construção de sites e também podemos utilizar mais styles em páginas diferentes para ficar mais limpo e flexível seus sites.*/

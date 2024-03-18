@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+
+    <style>
+        *{
+            height: 100%;
+        }
+        body{
+            background-image: linear-gradient(180deg,#B1DDEC 30%, #B48D5A, #6B7C34);
+            background-attachment: fixed;           
+        } /*Usamos o back.att.fixed para não ficar com partes do fundo faltando partes*/
+        h1 {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);        
+        } /*Centralizando o h1 na página*/
+    
+    </style> <!--Usando recursos inline para gradiente. Note que se não colocarmos a configuração global *{hight: 100%}, o gradiente colocado de cima para baixo ou vice-versa (180graus) ficará zebrado.-->
+
+<style>
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15%;
+        margin-bottom: auto;
+        width: 50%;
+        height: 50%;
+    } /*Trabalhando com a posição da foto na página*/
+</style>
+
+</head>
+<body>
+
+    <h1>Testando Gradientes</h1>
+
+    <img src="Toussant.png" alt="image/png" class="center">
+        
+</body>
+</html>

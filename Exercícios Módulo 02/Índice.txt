@@ -1,0 +1,186 @@
+ex001- Exemplo de cores
+<!--Representação por códigos hexadecimais-->
+    <!--Decimal: 0 1 2 3 4 5 6 7 8 9  -->
+    <!--Hexadecimal: 0 1 2 3 4 5 6 7 8 9 A B C D E F-->
+<!--Representação em RGB (Red, Green, Blue) ou RGBA (Red, Green, Blue e Alpha que é a transparência da barra do meio entre a barra de cor e a tela de tonalidade)-->
+<!--Representação por HSL(HUE, Saturation, Luminosity)-->
+/*Usamos o back.att.fixed para não ficar com partes do fundo faltando partes*/
+<!--Usando recursos inline para gradiente. Note que se não colocarmos a configuração global *{hight: 100%}, o gradiente colocado de cima para baixo ou vice-versa (180graus) ficará zebrado.-->
+/*Trabalhando com a posição da foto na página*/
+/*Centralizando o h1 na página*/
+Fazendo um style.css como página de css separada
+
+ex002- Fontes em CSS
+<style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        h1, h2 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+
+ex002b - Alinhamentos
+<style>
+        body{
+            font: normal 16px Arial, Verdana, Serif;
+            text-align: left;
+            margin: 20px; /*Adiciona uma margem de 20px em todos os lados do corpo*/
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        h2{
+            text-align: right;
+        }
+
+        p{
+            text-align: justify;
+            text-indent: 30px;/*início do parágrafo*/
+        }
+
+    </style>
+
+@import url();/*Está na próxima pasta ex003*/
+
+/*Temos as medidas absolutas: cm, mm, in(polegada), px(pixel), pt(ponto), pc(paica)
+
+            Temos as medidas relativas: em(tamanho atual da fonte tendo o M maiúsculo como relação), ex(como o anterior porém usa o X como relação), rem, vw(largura da view port ou da tela), vh(altura da view port), % 
+            */
+font-size: 1em;/*É recomendado o uso de px e em para font-size. 16px geralmente é igual a 1em.*/
+            font-weight: bold; /*weight(peso), width(largura), height(altura)
+            ligther(magrinho), normal, bold(gordinho), bolder(mais gordo) e também podemos colocar números do 100 ao 900*/
+
+/*Podemos fazer um shorthand e simplificar todas essas linhas de códigos acima, como mostrado agora abaixo caso queiramos usar elas para modificar apenas o H1. Podemos deixar nessa ordem: font-style, font-weight, font-size, font-family*/
+
+
+
+
+
+ex003- Google Fontes
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        /*Lembrando que como copiamos link, devemos estar online para usar essas fontes, à não ser que façamos download das fontes*/
+
+ @font-face {
+            font-family:'love';
+            src: url(lovely_valentine_script/Lovely\ Valentine\ Sans.otf) format('opentype'), url(lovely_valentine_script/Lovely\ Valentine\ Sans.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            /*Tipos de format: 
+            -opentype(otf), 
+            -truetype(ttf),
+            -embedded-opentype, 
+            -truetype-aat (apple advanced typography),
+            -svg */
+        }
+
+
+ex004- Seletores Personalizados
+ <div id="principal"> <!--Para centralizar (Eu usei este código pois eu quis deixar o fundo colorido do texto, se não usar este código ele não centraliza)-->
+        <h1 id="principal">Criando Sites em HTML e CSS</h1>
+    </div>
+
+<!--Posso aplicar mais de uma classe à um elemento inclusive posso fazer com o id também por exemplo:
+    <h1 id="principal" class="destaque">Criando Sites em HTML e CSS</h1>-->
+
+@charset "UTF-8";
+
+/*
+    Em HTML é id    = em CSS é #
+    Em HTML é Class = em CSS é .
+*/
+
+div#principal{
+    text-align: center;/*Devemos fazer isso para manter o h1#principal centralizado, caso contrário não funcionará*/
+}
+
+h1#principal{
+    /*text-align: center;*/ /*no caso de usarmos o div para isso, não há necessidade de usar o text-align aqui*/
+    background-color: #2A3323;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    display: inline-block; /* Adiciona esta linha */
+    padding: 5px; /* Adiciona um pouco de espaço ao redor do texto */
+
+/*Uma regra pelo W3C é que se usarmos um id#principal em 1 elemento, não podemos usar ele em outros e sim, devemos criar uma classe class para usarmos a mesma característica para outros parágrafos por exemplo.*/
+
+
+ex005- Exemplo de Hover / Pseudo-classes / Links
+div > p{
+            display: none;/*deixar o texto escondido*/
+        }/*significa que o parágrafo que está dentro da div será manipulado agora*/
+
+Pseudo-classes
+/*hover significa quando eu passar o mouse por cima ele vai ficar diferente*/
+<!--Agora veremos que ':' se refere à pseudo-classes que estão relacionadas a um estado de um determinado elemento. -->
+
+<style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none; /*para tirar o sublinhado*/
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        } /*Para ficar amarelo quando estier sendo ativado ou seja, quando estiver clicando nele*/
+    </style>
+
+  <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/">Canal do Youtube</a></li> <!--Lembrando que target_blank abre o link em outra aba-->
+        <li><a href="https://www.cursoemvideo.com">Site do CursoemVideo</a></li>
+    </ul>
+
+<!--   Seletores Personalizados
+        @  = at-rules
+        #  = id
+        .  = class
+        :  = pseudo-class
+        :: = pseudo-element
+        >  = children
+    -->
+
+
+
+ex006- Modelo de caixa e aninhamento
+Para abrir o seu DevTools, você vai no navegador, aperta o botão direito do mouse e vai em inspecionar.
+Essa ferramente é muito útil para quando estamos desenvolvendo o site e podemos manipular as configurações dentro do DevTools para depois colocar no original do Visual Studio Code.
+Para alterar a posição da barra de ferramentas do DevTools no Microsoft Edge, siga estas etapas:
+
+Encaixando na parte inferior:
+Clique no botão de menu Personalizar e controlar DevTools () no canto superior direito do DevTools.
+Na seção Local do Dock, selecione Encaixe na parte inferior ().
+Isso posicionará a barra de ferramentas do DevTools na parte inferior da janela do navegador.
+Encaixando na parte esquerda:
+Se você preferir, também pode encaixar o DevTools no lado esquerdo da janela do navegador. Basta selecionar Encaixe para a esquerda () na mesma seção.
+Desencaixando em uma janela separada:
+Se você deseja trabalhar com vários monitores ou precisa de muito espaço para a interface do usuário do DevTools, pode desencaixar o DevTools em uma janela separada. Selecione Desencaixar em janela separada ().
+
+Simplificação por SHORTHAND
+
+
+ex006b - Grouping Tags 
+
+
+ex007-

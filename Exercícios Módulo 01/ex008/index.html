@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+    <style>body{background-color: rgb(193, 193, 242);}</style>
+<style>mark{background-color: bisque;}</style><!--Neste caso, quando colocamos este style mark aqui abaixo de title, significa que o padrão da marcação de texto do html deixa de ser amarelo(cor padrão) para ser a cor que você escolheu aqui. Lembrando que podemos ainda assim fazer o style entre a tag mark no texto abaixo para mudar a cor do marcador.-->
+<style>
+.much-bigger {font-size: 2em;}
+.bigger {font-size: 1.5em;}
+</style><!--Neste caso, precisamos colocar já o tamanho da letra para direcionar o quanto maior queremos a letra ao usarmos um aumentador de letras.-->
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+    <h2>Negrito ou Destaque</h2>
+    <p>Nessa frase temos um termo <b> em negrito
+    </b> usando a tag B.</p>
+    <p>E nesta frase temos um termo <strong>termo em destaque </strong>usando Strong .</p>
+    <h2>Itálico ou Ênfase</h2>
+    <p>Nesta frase podemos ver termo <i>em itálico</i> usando a tag i .</p> 
+    <!-- também podemos selecionar o termo que queremos deixar em negrito ou itálico e pressionar ctrl shift P e selecionar wrap with abbreviation. Conseguimos também selecionar a frase em itálico e ainda adicionar o negrito para ficar a frase em itálico negrito-->
+
+    <p>Nesta frase temos <em>um termo com ênfase</em> usando a tag EM (semântica).</p> 
+    <!-- Devemos usar mais as tags strong e EM para negrito e itálico.-->
+    <h2>Texto Marcado</h2>
+    <p>Podemos também criar <mark>um texto marcado</mark> usando a tag MARK.</p>
+    <!--para mudar a cor do marca texto, dentro da tag mark dê um espaço e escreve style, e neste caso já entraremos em CSS pois iremos mudar a cor da marcação. Background e escolhe a cor, pois a cor normal do html é amarelo.-->
+    <p>Então iremos mostrar como fica o <mark style="background-color: aquamarine;">texto marcado com a tag mark e o css style background colorido</mark></p>
+    <h2>Texto Grande e Pequeno</h2>
+    <p>Estamos criando <span class="much-bigger">um texto muito grande</span>, <span class="bigger">um texto grande</span> e <small>um texto pequeno</small> neste parágrafo.</p>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar ênfase e indicar que ele foi adicionado depois.</p>
+    <p>Existe também <u>um texto sublinhado</u> que usamos a tag U que é não semântica.</p>
+
+    <h2>Elementos Semânticos</h2>
+    <p>Esses elementos fornecem informações sobre o tipo de conteúdo que contêm, além de apenas descrever a aparência ou o comportamento. Eles ajudam os motores de busca a entender o conteúdo e melhorar a acessibilidade. No seu exemplo, a tag INS é um elemento semântico. Ele indica que o texto foi inserido na versão atual do documento.</p>
+    <h2>Elementos Não Semânticos</h2>
+    <p>Esses elementos não fornecem nenhuma informação adicional sobre o tipo de conteúdo que contêm. Eles são usados principalmente para aplicar estilos ou para certos comportamentos de JavaScript. No seu exemplo, a tag U é um elemento não semântico. Ele simplesmente aplica um sublinhado ao texto, sem indicar por que o texto está sublinhado.</p>
+    <p><mark style="background-color: rgb(227, 237, 237);" ><span class="bigger">Usamos elementos semânticos quando queremos dar ao conteúdo um significado específico que seja compreendido tanto pelos navegadores quanto pelos desenvolvedores. Usamos elementos não semânticos quando queremos estilizar o conteúdo sem dar a ele um significado específico.</span></mark></p>
+    <h2>Texto Sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>2</sup> + 3.</p>
+    <h2>Texto Subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O.</p>
+</body>
+</html>

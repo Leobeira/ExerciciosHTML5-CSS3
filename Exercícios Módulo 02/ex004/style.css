@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+/*
+    Em HTML é id    = em CSS é #
+    Em HTML é Class = em CSS é .
+*/
+
+
+body{
+    background-color: #d1fee5;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1{
+    color: #2A3323;
+}
+
+div#principal{
+    text-align: center;/*Devemos fazer isso para manter o h1#principal centralizado, caso contrário não funcionará*/
+}
+
+h1#principal{
+    /*text-align: center;*/ /*no caso de usarmos o div para isso, não há necessidade de usar o text-align aqui*/
+    background-color: #2A3323;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    display: inline-block; /* Adiciona esta linha */
+    padding: 5px; /* Adiciona um pouco de espaço ao redor do texto */
+
+}
+
+h2{
+    color: #55852E;
+}
+
+.basico{
+    color: #55852E;
+    font-weight: bold;
+    font-style: italic;
+}
+.intermediario{
+    color: #bbac3b;
+    font-weight: bold;
+    font-style: italic;
+}
+.avancado{
+    color: #cc7334;
+    font-weight: bold;
+    font-style: italic;
+}
+
+p{
+    text-decoration: underline;
+}
+
+.destaque{
+    background-color: #ebdf41ac;
+    display: inline-block;
+}
+
+/*Uma regra pelo W3C é que se usarmos um id#principal em 1 elemento, não podemos usar ele em outros e sim, devemos criar uma classe class para usarmos a mesma característica para outros parágrafos por exemplo.*/

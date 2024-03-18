@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>/*Existe uma fonte que se chama work sans, que é ótima para dar peso na fonte, já que as comuns como Arial só tem 2 pesos, magrinha e gordinha. Mas para usar a work sans precisamos usar o código abaixo.*/
+
+        @import url();/*Está na próxima pasta ex003*/
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*Temos as medidas absolutas: cm, mm, in(polegada), px(pixel), pt(ponto), pc(paica)
+
+            Temos as medidas relativas: em(tamanho atual da fonte tendo o M maiúsculo como relação), ex(como o anterior porém usa o X como relação), rem, vw(largura da view port ou da tela), vh(altura da view port), % 
+            */
+
+            font-size: 1em;/*É recomendado o uso de px e em para font-size. 16px geralmente é igual a 1em.*/
+            font-weight: bold; /*weight(peso), width(largura), height(altura)
+            ligther(magrinho), normal, bold(gordinho), bolder(mais gordo) e também podemos colocar números do 100 ao 900*/
+            font-style: italic; 
+            text-decoration: underline;
+        }
+
+        /*Podemos fazer um shorthand e simplificar todas essas linhas de códigos acima, como mostrado agora abaixo caso queiramos usar elas para modificar apenas o H1. Podemos deixar nessa ordem: font-style, font-weight, font-size, font-family*/
+        hi{
+            font: italic bold 3em 'work Sans', sans-serif;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque aut quisquam illum, quos ipsum tempore similique fugit eum corrupti, error reiciendis. Facere doloribus odio facilis excepturi voluptate. Dolorum, libero aliquid.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatem deleniti, eligendi amet totam iusto est reiciendis possimus commodi dicta mollitia sequi dolores nihil corrupti porro. Amet dolore deleniti iure?</p>
+
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eveniet culpa maxime, error itaque beatae molestias omnis repellendus in nesciunt ducimus, tenetur nostrum sint commodi veritatis vero optio dolore obcaecati.</p>
+</body>
+</html>

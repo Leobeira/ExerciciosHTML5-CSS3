@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+
+    <link rel="shortcut icon" href="imagens/thewitcher.ico.png" type="image/x-icon"> <!--Deixando como ico para a aba do site-->
+
+    <style>body{background-color: rgb(213, 162, 95);}</style>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video src="Video/RememberNight.mp4" width="700" controls></video><!-- Esta é uma maneira mais fácil de fazer, porém temos que adequar para uma maneira um pouco mais complexa como mostrado à seguir.-->
+
+    <!--Este é o melhor jeito a se fazer, pois assim ele te dá mais opções de vídeos para rodar na hospedagem como mp4, ogg, m4v etc...-->
+    <video controls width="600" poster="imagens/thewitcher.jpg">
+        <source src="Video/Witcher.webm.webm" type="video/webm">
+        <source src="Video/Witcher1.mp4.mp4" type="video/mp4">
+        <source src="Video/Witcher.mp4" type="video/mp4">
+
+        <p>Seu navegador não tem compatibilidade com o tipo de vídeo.</p>
+    </video>
+    
+    <p>Para ir à página seguinte <a href="pagina2.html" rel="next" target="_self">clique aqui</a></p>
+
+</body>
+</html>

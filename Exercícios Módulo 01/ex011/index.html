@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+
+</head>
+<body>
+    <h1>Criando Imagens Dinâmicas</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!--Isso significa que minha foto, apesar de ter 1000px e eu colocar 1050px para evitar barras laterais de rolagem, se ele achar que está muito grande para o navegador ou dispositivo, ele irá então carregar a foto-m que possui 700px.-->
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+        <!--Lembrando que sempre temos que deixar nesta ordem da menor em cima para a maior embaixo.-->
+    </picture>
+
+    
+    <h1>Reproduzindo áudio</h1>
+    <p>Este é um meio de reproduzir áudio no site.</p>
+    <p><audio src="midia/Merchant.mp3" controls autoplay></audio></p>
+
+
+    <p>Siga para a <a href="pagina2.html" rel="next" target="_self">próxima página</a> para ver a mágica acontecer.</p>
+</body>
+</html>

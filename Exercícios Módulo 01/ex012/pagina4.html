@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparência</title>
+
+    <link rel="shortcut icon" href="imagens/thewitcher.ico.png" type="image/x-icon">
+
+    <style>
+        body::after {
+          content: "";
+          background: url(imagens/Toussant.png);
+          opacity: 0.5;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          position: absolute;
+          z-index: -1;   
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        </style>
+</head>
+<body>
+    <h1>Para deixar a imagem transparente sem precisar mexer no editor de imagens.</h1>
+
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between;">
+    <div style="width: 45%; margin-right: 10%;">
+        <h2><span style="color: rgb(7, 3, 2);">
+            <pre style="text-align: justify; font-family: monospace;">
+O problema de se hospedar vídeos em seu
+próprio computador (servidor local) é que
+haverá um grande tráfego de dados, gerando 
+um gasto muito grande, pois você irá 
+prover os dados para as pessoas que estão 
+usufruindo do seu site, ou seja, você fará
+muito gasto com upload.
+            </pre>
+    
+        <p style="text-align: justify; white-space: pre-line;">
+        Para resolver este problema, podemos então 
+        usar links externos, assim não teremos gastos
+        absurdos com dados de upload.
+        </p>
+    </span></h2>
+    </div>
+    
+    <div style="width: 45%;">
+            <h1>Inserindo vídeo do Youtube</h1>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk?si=LI_X961g5NEhQ8C7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+</div>
+    
+    
+    <p><a href="pagina3.html" rel="prev" target="_self"><span style="color: blueviolet;">Página anterior</span></a></p>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Bokehlicia.png" type="image/x-icon"><!--Colocando favicon-->
+
+    <title>Outras Formatações</title>
+
+    <style>
+        body {
+            background-color: rgb(204, 170, 119);
+        } 
+        mark {
+            background-color: blue;
+        }
+        .colored-text {
+        color: blue; /* Substitua 'blue' pela cor que você deseja */
+        }
+        .much-bigger {
+            font-size: 2em;
+        }    
+        .bigger{font-size: 1.5em;
+        }        
+        .highlight {
+            background-color: rgb(26, 153, 111);
+        }
+        </style> <!--Colocando cor de fundo, marcar texto colorindo o fundo do texto, colorir as palavras ou letras e ajustar tamanho da palavra selecionada, respectivamente-->
+
+</head>
+<body>
+    <mark>
+        <h1>Outras formatações</h1>
+    </mark>
+    <mark style="background-color: rgb(161, 27, 27);">
+        <h2>Código Fonte</h2>
+    </mark>
+    <p>O comando document.getElementById quando escrito com o comando code, como mostrado em seguida, <code>document.getElementById</code>('teste'), é escrito em linguagem JavaScript. </p> <!--Neste caso, vamos envelopar o "document.getElementById" porque se deixar ele no modelo de escrita padrão do html, o i e o l não tem o mesmo espaçamento das outras letras e elas ficam difíceis de enxergar. Por isso envelopamos eles no comando code, que é uma fonte mono-espaçada.-->
+    <!-- Agora vejamos um código digitado como no Python no comando code.-->
+    <code>
+        num = int(input('Digite um número: '))
+        if num % 2 == 0:
+            print(f'O número {num} formatado é par')
+        else:
+            print(f'O número {num} formatado é ímpar')
+        print('Fim do programa!')
+    </code> <!-- Lembrando que se deixarmos o código assim, no code, ele não organiza a identação, deixando o código numa linha só.-->
+    <!-- Então, para deixar este código organizado, devemos pegar esta tag code, envelpa ela numa tag pre, como mostrado abaixo: -->
+
+    <pre>
+        <code>
+            <span class="much-bigger">
+                num = int(input('Digite um número: '))
+                if num % 2 == 0:
+                    print(f'O número {num} formatado é par')
+                else:
+                    print(f'O número {num} formatado é ímpar')
+                print('Fim do programa!')
+            </span>
+        </code>
+    </pre>
+
+    <!-- Para não deixar uma margem grande espaçada, é só manter o código próximo ao começo do parágrafo como mostrado embaixo:-->
+    <pre>
+        <code>
+            <span class="bigger">
+                <span class="colored-text">
+num = int(input('Digite um número: '))
+if num % 2 == 0:
+    print(f'O número {num} formatado é par')
+else:
+    print(f'O número {num} formatado é ímpar')
+print('Fim do programa!')
+                </span>
+            </span>
+        </code>
+    </pre>
+
+    <pre>
+        <code>
+            <span class="highlight">
+                <span style="color: aliceblue;">
+        num = int(input('Digite um número: '))
+        if num % 2 == 0:
+            print(f'O número {num} formatado é par')
+        else:
+            print(f'O número {num} formatado é ímpar')
+        print('Fim do programa!')
+                </span>
+            </span>
+        </code>
+    </pre>
+
+    <pre>
+        <code>
+            <span style="color: aliceblue;">
+                <span class="highlight">
+num = int(input('Digite um número: '))
+if num % 2 == 0:
+    print(f'O número {num} formatado é par')
+else:
+    print(f'O número {num} formatado é ímpar')
+print('Fim do programa!')
+                </span>
+            </span>
+        </code>
+    </pre>
+    
+<h2>Citações</h2>
+<p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido.</q></p> <!-- Essa tag Q significa aspas para dar ênfase a uma citação-->
+
+<h2>Citações Completas</h2>
+<h3>Por exemplo:</h3>
+<p>Segundo Andrei Langeloh Roos et al., no livro sobre aves de rapina: </p>
+<blockquote cite="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/pan/pan-aves-de-rapina/1-ciclo/pan-aves-de-rapina-livro.pdf">
+    O Brasil é conhecido mundialmente por ser detentor de uma notável biodiversidade, possuindo elevado número de espécies em todos os grupos taxonômicos.
+</blockquote> <!-- Isso serve para fazer citações-->
+<img src="Coruja2.png" alt="Coruja">
+
+<h2>Abreviações</h2>
+<p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou gostando muito.</p> <!-- Fazemos isso para que possamos colocar o significado das siglas colocadas-->
+
+<h2>Texto Invertido</h2>
+<p>Estou aprendendo a criar coisas em HTML...<bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p> <!-- Para inverter os textos da direita para esquerda bdo-l ou da esquerda para a direita bdo-r-->
+</body>
+</html>

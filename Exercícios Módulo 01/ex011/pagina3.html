@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproduzindo mídia</title>
+    <style>
+        body{background-color: rgb(195, 149, 88);}
+    </style>
+</head>
+<body>
+    <h1>Repruduzindo mídia de áudio</h1>
+    <!--No caso abaixo, podemos ver o preload que tem auto, metadata e none, sendo automático, carrega e informa duração e nenhuma informação, respectivamente. Já o autoplay é para iniciar sozinho, controls mostra o controle de play, stop, pausa e volume, e loop para ele terminar de reproduzir e repetir novamente desde o início.-->
+
+    <audio preload="metadata" autoplay controls loop> 
+        <source src="midia/Monsters.mp3" type="audio/mpeg">
+        <source src="midia/Monsters.ogg" type="audio/ogg">
+        <source src="midia/Monsters.wav" type="audio/wav">
+    </audio> <!--Este é um exemplo caso tivéssemos várias opções para o site abrir o áudio. A ordem é muito importante para ele tentar carregar o primeiro e depois o segundo e assim por diante.-->
+
+    <p>Infelizmente seu navegador não consegue carregar o arquivo de áudio. <a href="midia/Monsters.zip" target="_blank" download="Monster.mp3">Clique aqui</a> para baixar o áudio.</p>
+
+    <p>Para voltar à página anterior, <a href="pagina2.html" rel="prev">clique aqui.</a></p>
+    <p>Para voltar à primeira página, <a href="index.html" rel="prev">clique aqui.</a></p>
+
+    <!-- Nota: Sites que reproduzem áudio automaticamente (ou vídeos com trilha de áudio) podem ser uma experiência desagradável para os usuários, portanto devem ser evitados sempre que possível. Se você precisar oferecer a funcionalidade de reprodução automática, deverá ativá-la (exigindo que o usuário a habilite especificamente). No entanto, isto pode ser útil ao criar elementos de mídia cuja fonte será definida posteriormente, sob controle do usuário.-->
+
+</body>
+</html>
