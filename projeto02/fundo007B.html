@@ -3,35 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundo fixo de tela</title>
+    <title>Fundo fixo Shorthand</title>
 
     <style>
         body{
             height: 100vh;
-            background-color: black;
+            /*Shorthand - background
+            color > image > position > / > size > repeat > attachment.*/
+            background: black url('imagens/wallpaper002.jpg') center center / cover no-repeat  fixed;
+            /*Não esquecer de colocar a / entre position e size senão não funciona o fundo.*/
+
+            /*background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
-            background-position: center top;
+            background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover; /*contain;*/
-            /*O contain mostra a imagem 100% exigida, sem cortes, mas ela pode criar barras mostrando o fundo do site porque ela mantem sempre a foto sem distorção e 100% da imagem na tela. 
-            Já o cover vai exibir a foto no fundo total da tela, mesmo que ele tenha que cortar a foto nas laterais, mas não irá criar laterais mas também dependendo, não irá mostrar a foto no seu 100% total.
-            Porém ainda tem um problema. Se o conteúdo escrito for muito grande, a imagem de fundo, ao rolar a página, a imagem ficará cortada.*/
+            background-size: cover;
+            background-attachment: fixed;*/       
+        
         }
 
+       
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;/*usamos para não ter quebra do site, caso use em tela muito pequena*/
             padding: 10px;
-            border: 1px solid darkblue;
-            border-radius: 10px;
             margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+        
         }
 
 
     </style>
+
 </head>
 <body>
-    <main>
+     <main>
         <h1>Teste de imagem de fundo</h1>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eum modi asperiores ad eius repudiandae natus cumque quia, earum debitis. Eligendi corrupti saepe tempora iste deleniti soluta, ullam porro pariatur!

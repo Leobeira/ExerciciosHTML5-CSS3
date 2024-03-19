@@ -7,24 +7,29 @@
 
     <style>
         body{
-            height: 100vh;
+            height: 100vh;            
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
-            background-position: center top;
+            background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover; /*contain;*/
-            /*O contain mostra a imagem 100% exigida, sem cortes, mas ela pode criar barras mostrando o fundo do site porque ela mantem sempre a foto sem distorção e 100% da imagem na tela. 
-            Já o cover vai exibir a foto no fundo total da tela, mesmo que ele tenha que cortar a foto nas laterais, mas não irá criar laterais mas também dependendo, não irá mostrar a foto no seu 100% total.
-            Porém ainda tem um problema. Se o conteúdo escrito for muito grande, a imagem de fundo, ao rolar a página, a imagem ficará cortada.*/
+            background-size: cover;
+            background-attachment: fixed;
+            /*Agora usaremos o background attachment para resolver o problema da imagem fixa cortada do fundo 006*/
+            /*Se eu usar o attachment scroll, eu consigo rodar a tela e ir repetindo a imagem, mas lembrando de mudar o background repeat para por exemplo repeat ou repeat-y.
+            Agora temos a opção fixed que mantém o background fixo porém o texto é que rola.*/
         }
+
+        /*Shorthand - background
+        color > image > position > / > size > repeat > attachment. Isso será mostrado no fundo 007B*/
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;/*usamos para não ter quebra do site, caso use em tela muito pequena*/
             padding: 10px;
-            border: 1px solid darkblue;
-            border-radius: 10px;
             margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+        
         }
 
 

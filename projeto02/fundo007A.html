@@ -3,22 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundo fixo de tela</title>
+    <title>Fundo Fixo</title>
 
-    <style>
-        body{
-            height: 100vh;
-            background-color: black;
+    <style>/*também existe essa maneira de fazer a rolagem de texto com fundo fixo*/
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
             background-image: url('imagens/wallpaper002.jpg');
-            background-position: center top;
+            background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover; /*contain;*/
-            /*O contain mostra a imagem 100% exigida, sem cortes, mas ela pode criar barras mostrando o fundo do site porque ela mantem sempre a foto sem distorção e 100% da imagem na tela. 
-            Já o cover vai exibir a foto no fundo total da tela, mesmo que ele tenha que cortar a foto nas laterais, mas não irá criar laterais mas também dependendo, não irá mostrar a foto no seu 100% total.
-            Porém ainda tem um problema. Se o conteúdo escrito for muito grande, a imagem de fundo, ao rolar a página, a imagem ficará cortada.*/
+            background-size: cover;
+            z-index: -1;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            overflow: auto;
+            position: relative;
         }
 
         main {
+            position: relative;
+            z-index: 1;
             background-color: white;
             width: 400px;
             padding: 10px;
@@ -26,9 +37,8 @@
             border-radius: 10px;
             margin: auto;
         }
-
-
     </style>
+
 </head>
 <body>
     <main>
