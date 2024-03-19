@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+
+    <style>
+        #container {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;/*para a imagem ficar certo*/
+            position: relative;/*por regra o posicionamento da section é relativo*/
+            height: 94vh;/*para o fundo ter 94% do tamanho da tela do navegador*/
+            background-color: purple;
+            padding: 10px;
+
+        }
+
+        #conteudo {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute;/*por regra o posicionamento do article é absoluto. Fazendo isso, você pode usar duas propriedades que são posicionamentos como left top por exemplo*/
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            left: 50%;
+            top: 50%;
+
+            /*Se deixarmos até aqui, a imagem amarela estará posicionada a começar pelo próprio canto superior esquerdo, à partir do centro da tela, vindo para a parte inferior direita da tela.
+            Porém o que faremos abaixo é para posicionar o centro da imagem amarela ao centro da imagem maior roxa.*/
+
+            transform: translate(-50%, -50%);/*- é para mexer para esquerda e para cima, + mexe para direita e para baixo*/
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
