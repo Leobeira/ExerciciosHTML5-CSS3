@@ -12,15 +12,38 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;/*isso é só para manter a posição da tabela relativa, para depois fazer o th Estados e População se moverem*/
         }
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
-            background-color: grey;
+            background-color: rgb(94, 94, 94);
             color: white;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;/*isso é para o topo fixo não ficar com espaço entre o topo da página*/
+            background-color: rgb(94, 94, 94);
+        } /*Tudo isso para fazer com que a linha onde está o th Estado e População, fiquem fixos mesmo rolando a tabela para baixo*/
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }/*usamos uma pseudo-classe que filho e de duas em duas vai colocar uma tarja cinza, pois se não fizer isso e deixar apenas tbogy > tr, todas as linhas ficarão cinzas. No lugar e 2n e deixar odd, vai deixar apenas as linhas ímpares cinzas ou even que seria par*/
+
+        tbody > tr:nth-child(odd){
+            background-color: beige;
+        }/*também podemos fazer esta outra opção em deixar as linhas zebradas ímpares de outra cor enquanto as de cima estão pulando de dois em dois. Esse exemplo foi apenas para testar, já que o correto seria então deixar em cima como even(par) e embaixo odd(ímpar)*/
 
         td.num {
             text-align: right;
@@ -33,6 +56,7 @@
     <!--
         Anatomia para tabelas grandes
             Table
+                CAPTION (Legenda da Tabela)
                 THead (opcional)
                     tr, td, th
                 TBody
@@ -42,10 +66,11 @@
     -->
 
     <table>
+        <caption>População da Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>                
+                <th scope="col">Estado</th><!--Usa-se o col para dizer que os dados de Estado estão abaixo na mesma coluna, o mesmo acontece com População.-->
+                <th scope="col" style="width: 50px;">População</th><!--O width diminui o espaço da coluna de população-->                
             </tr>
         </thead>
 
@@ -187,14 +212,23 @@
 
         </tbody>
 
-
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th><!--Como este é diferente do título Estados e População, usa-se o row por o resultado estar na mesma linha e não na mesma coluna como acontece anteriormente-->
                 <td class="num"><strong>203 062 512</strong></td>
             </tr>
         </tfoot>
     </table>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda cumque consectetur omnis nostrum sint ea nihil, quo et delectus reprehenderit vero tenetur molestias, quae ut ipsum. Ipsa quod ullam laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eaque placeat voluptate dolor quia beatae unde deleniti eius! Autem provident cum, quam dicta debitis eum deserunt omnis recusandae harum quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae doloribus quos sapiente autem, distinctio non quis maiores labore esse cum voluptas eius veniam in unde neque, nesciunt, fugiat quam iusto. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eaque neque tenetur iste consectetur? Eveniet, quasi perferendis adipisci dicta minima tempora porro commodi exercitationem magni quis aut quae doloribus inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero id eos delectus nesciunt minima. Eius nesciunt sint consequatur similique? Doloremque commodi perspiciatis quos iste labore harum deserunt quisquam totam enim!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda cumque consectetur omnis nostrum sint ea nihil, quo et delectus reprehenderit vero tenetur molestias, quae ut ipsum. Ipsa quod ullam laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eaque placeat voluptate dolor quia beatae unde deleniti eius! Autem provident cum, quam dicta debitis eum deserunt omnis recusandae harum quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae doloribus quos sapiente autem, distinctio non quis maiores labore esse cum voluptas eius veniam in unde neque, nesciunt, fugiat quam iusto. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eaque neque tenetur iste consectetur? Eveniet, quasi perferendis adipisci dicta minima tempora porro commodi exercitationem magni quis aut quae doloribus inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero id eos delectus nesciunt minima. Eius nesciunt sint consequatur similique? Doloremque commodi perspiciatis quos iste labore harum deserunt quisquam totam enim!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda cumque consectetur omnis nostrum sint ea nihil, quo et delectus reprehenderit vero tenetur molestias, quae ut ipsum. Ipsa quod ullam laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eaque placeat voluptate dolor quia beatae unde deleniti eius! Autem provident cum, quam dicta debitis eum deserunt omnis recusandae harum quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae doloribus quos sapiente autem, distinctio non quis maiores labore esse cum voluptas eius veniam in unde neque, nesciunt, fugiat quam iusto. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eaque neque tenetur iste consectetur? Eveniet, quasi perferendis adipisci dicta minima tempora porro commodi exercitationem magni quis aut quae doloribus inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero id eos delectus nesciunt minima. Eius nesciunt sint consequatur similique? Doloremque commodi perspiciatis quos iste labore harum deserunt quisquam totam enim!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda cumque consectetur omnis nostrum sint ea nihil, quo et delectus reprehenderit vero tenetur molestias, quae ut ipsum. Ipsa quod ullam laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eaque placeat voluptate dolor quia beatae unde deleniti eius! Autem provident cum, quam dicta debitis eum deserunt omnis recusandae harum quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae doloribus quos sapiente autem, distinctio non quis maiores labore esse cum voluptas eius veniam in unde neque, nesciunt, fugiat quam iusto. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eaque neque tenetur iste consectetur? Eveniet, quasi perferendis adipisci dicta minima tempora porro commodi exercitationem magni quis aut quae doloribus inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero id eos delectus nesciunt minima. Eius nesciunt sint consequatur similique? Doloremque commodi perspiciatis quos iste labore harum deserunt quisquam totam enim!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda cumque consectetur omnis nostrum sint ea nihil, quo et delectus reprehenderit vero tenetur molestias, quae ut ipsum. Ipsa quod ullam laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eaque placeat voluptate dolor quia beatae unde deleniti eius! Autem provident cum, quam dicta debitis eum deserunt omnis recusandae harum quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae doloribus quos sapiente autem, distinctio non quis maiores labore esse cum voluptas eius veniam in unde neque, nesciunt, fugiat quam iusto. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eaque neque tenetur iste consectetur? Eveniet, quasi perferendis adipisci dicta minima tempora porro commodi exercitationem magni quis aut quae doloribus inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero id eos delectus nesciunt minima. Eius nesciunt sint consequatur similique? Doloremque commodi perspiciatis quos iste labore harum deserunt quisquam totam enim!</p>
 
 </body>
 </html>
