@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupando Colunas</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        tr.destaque {
+            background-color: aquamarine;
+        } /*Esta é uma maneira de destacar uma linha inteira selecionada no tr abaixo, porém para selecionar uma coluna, já funciona de outra forma, mostrada no início da table, logo abaixo*/
+
+        col.cnome {
+            background-color: lightgray;
+        }
+        col.csexo {
+            background-color: azure;
+        }
+        col.cidade {
+            background-color: bisque;
+        }
+        col.cprof{
+            background-color: lightpink;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Agrupando Colunas</h1>
+
+
+    <table>
+<!--Para podermos destacar uma coluna inteira, seguimos o seguinte passo:-->
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+
+        <tr class="destaque">
+            <td>Felipe</td>
+            <td>M</td>
+            <td>29</td>
+            <td>Biólogo</td>
+        </tr>
+
+        <tr>
+            <td>Fabaina</td>
+            <td>F</td>
+            <td>32</td>
+            <td>Enfermeira</td>
+        </tr>
+
+        <tr>
+            <td>Fabrício</td>
+            <td>M</td>
+            <td>36</td>
+            <td>Garçom</td>
+        </tr>
+
+        <tr>
+            <td>Paula</td>
+            <td>F</td>
+            <td>22</td>
+            <td>Atendente</td>
+        </tr>
+
+        <tr>
+            <td>Fernando</td>
+            <td>M</td>
+            <td>66</td>
+            <td>Aposentado</td>
+        </tr>
+
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>59</td>
+            <td>Do Lar</td>
+        </tr>
+
+        <tr class="destaque">
+            <td>Pedro</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Universitário</td>
+        </tr>
+
+        <tr>
+            <td>Antônio</td>
+            <td>M</td>
+            <td>49</td>
+            <td>Soldador</td>
+        </tr>
+    </table>
+</body>
+</html>
