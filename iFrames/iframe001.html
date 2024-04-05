@@ -12,10 +12,28 @@
 
     <!--Agora vamos mostrar a maneira usando o iframe-->
 
-    <p>
+    <!--Obs: o frameborder do iframe é só para criar uma borda. O 0 tira a borda e o 1 coloca a borda. E para criar uma borda podemos criar um style iframe {border: 1px solid black;}-->
+
+    <p><!--Por padrão, um iframe tem tamanho 300px de largura x 150px de altura-->
         Acessando o site do 
-        <iframe src="http://www.cursoemvideo.com" frameborder="0"></iframe>
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500"><a href="https://www.cursoemvideo.com"></a></iframe><!--Mudando a altura padrão-->
         para aprender a programar.
     </p> <!--Isso cria uma nova instância do navegador-->
+
+    <p>
+        Temos o repositório do Guanabara
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="350" width="500"></iframe>
+        que é muito legal.
+    </p>
+
+    <p>
+        O site do Google
+        <iframe src="http://www.google.com.br" frameborder="0">
+            <a href="https://www.google.com.br" rel="next" target="_blank"> Google</a>
+        </iframe>
+        também é muito legal, mas pena que não funciona.
+    </p> <!--Caso não seja compatível, e não abra, como é o caso do google, deixe o link para a pessoa navegar-->
+
+    
 </body>
 </html>
