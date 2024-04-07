@@ -32,7 +32,7 @@ section#telefone {
     height: 627px;
     width: 311px;
     /*para saber o height e width é só entrar nas configurações da imagem para saber os px que ela tem*/
-    max-height: 60%; /*para evitar que a imagem cubra todo eixo Y da tela*/
+    max-height: 80%; /*para evitar que a imagem cubra todo eixo Y da tela*/
     background-color: blue;
     background:/* blue*/ url('../imagens/frame-iphone.png') no-repeat;/*deixei o blue para mostrar o tamanho do background e poder ajustar ao tamanho da imagem mas depois pode inativar ele*/
     background-size: contain;
@@ -40,10 +40,10 @@ section#telefone {
 
 iframe#tela {
     position: relative;
-    top: 47px;
-    left: 13px;    
-    width: 158px;
-    height: 300px;
+    top: 52px;
+    left: 17px;    
+    width: 212px;
+    height: 385px;
     
 }
 
