@@ -68,4 +68,16 @@ section#redes-sociais img:hover {
     transition: transform 0.5s, border 0.6s;
 }
 
+@media screen and (max-width: 600px) {
+    section#telefone {
+      /* Estilos para telas com largura máxima de 600px (dispositivos móveis) */
+    }
+  }
+  
+  @media screen and (min-width: 601px) {
+    section#telefone {
+      /* Estilos para telas com largura mínima de 601px (desktops) */
+    }
+  }
+
 
