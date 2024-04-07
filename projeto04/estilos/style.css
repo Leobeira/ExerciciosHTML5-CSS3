@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+body {
+    background: url(../imagens/fundo-madeira.jpg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;/*apenas para fixar a tela e não permitir rolagem*/
+}
+
+main {
+    position: relative;
+    height: 100vh;   
+    
+}
+
+section#telefone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -50%); /*isso faz com que o top e left não fique descentralizado. Porém no início estava -50,-50 mas ajustes tiveram que ser feitos para centralizar ela pois devido outros comandos a imagem se deslocou sozinha para a esquerda*/
+    height: 627px;
+    width: 311px;
+    /*para saber o height e width é só entrar nas configurações da imagem para saber os px que ela tem*/
+    max-height: 60%; /*para evitar que a imagem cubra todo eixo Y da tela*/
+    background-color: blue;
+    background:/* blue*/ url('../imagens/frame-iphone.png') no-repeat;/*deixei o blue para mostrar o tamanho do background e poder ajustar ao tamanho da imagem mas depois pode inativar ele*/
+    background-size: contain;
+}
