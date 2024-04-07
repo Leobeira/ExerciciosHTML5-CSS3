@@ -46,3 +46,26 @@ iframe#tela {
     height: 300px;
     
 }
+
+section#redes-sociais {
+    text-align: right; /*move os logo para a direita da tela*/
+}
+
+section#redes-sociais img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;/*ele deixa o símbolo redondo*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.401);
+    box-sizing: border-box;/*para a borda fazer parte do objeto que é o logo*/
+
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.594);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.606);
+    transition: transform 0.5s, border 0.6s;
+}
+
+
