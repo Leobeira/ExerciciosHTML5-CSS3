@@ -38,14 +38,34 @@ section#telefone {
     background-size: contain;
 }
 
-iframe#tela {
+/*iframe#tela {
     position: relative;
     top: 52px;
     left: 17px;    
     width: 212px;
     height: 385px;
     
-}
+}*/
+
+@media screen and (max-width: 600px) {
+    iframe#tela {
+      /* Estilos para telas com largura máxima de 600px (dispositivos móveis) */
+      top: 10px;
+      left: 5px;    
+      width: 50vw;
+      height: 80vh;
+    }
+  }
+  
+  @media screen and (min-width: 601px) {
+    iframe#tela {
+      /* Estilos para telas com largura mínima de 601px (desktops) */
+      top: 52px;
+      left: 17px;    
+      width: 212px;
+      height: 385px;
+    }
+  }
 
 section#redes-sociais {
     text-align: right; /*move os logo para a direita da tela*/
