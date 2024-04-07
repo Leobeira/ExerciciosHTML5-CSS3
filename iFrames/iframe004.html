@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque necessitatibus voluptas rerum, tempora unde eveniet praesentium repellendus maiores aliquam incidunt soluta hic iusto tenetur. Ipsum quas aut rerum voluptatum porro!</p>
+
+    <iframe src="paginas-extras/pagina004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+        <!--Podemos remover o frameborder para deixar uma borda no iframe e colocar um sandbox="sandbox" para evitar que outros sites, que podem invadir o site que você colocou no seu iframe, consiga capturar seus dados usando o site citado como invasor. Isso não evita 100% mas deixa um pouco mais seguro. Porém se você deixar configurado sandbox="sandbox", ele irá ligar todas as seguranças no máximo, e você não vai conseguir enviar ou cadastrar o usuário, necessitando então, remover o "sandbox" e colocar o "allow-same-origin", ou seja, permitir conteúdo de mesma origem. E se quiser outras, é só dar um espaço e ir configurando as permissões.
+             O referrerpolicy no-referrer, significa que todo site que está dentro do iframe, não irá conseguir coletar os dados ou informação do usuário para enviar à propagandas. -->
+        Seu navegador não é compatível com isso.
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aut nostrum minus sequi. Totam voluptas nisi blanditiis sunt est dolorem sequi labore. A blanditiis dolores minima minus rerum quae nemo.</p>
+</body>
+</html>
