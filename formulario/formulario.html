@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+
+    <form action="cadastro.php" autocomplete="off"><!--Caso queira desligar o autocompletar do site para que não fique mostrando a janela com o nome já escrito quando você clica para escrever, só deixar autocomplete off.
+    já a action é para enviar esta ação, quando clicar no botão de submit, para uma linguagem de programação como o PHP-->
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome">
+        </p>
+
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p> <!--Pode colocar tanto o name se for usar o php ou id se for usar javascript pelo LABEL-->
+
+        <input type="submit" value="Enviar">
+    </form><!--Quando fazemos estes inputs no formulário, a caixa onde escrevemos não tem ligação com o nome e sobrenome automaticamente, por isso nós devemos fazer esta ligação para que quando escrevemos o nome e sobrenome, ele se ligue a estas caixas. Para isso usamos o PHP para fazer com que o objeto de entrada se ligue às etiquetas ou labels-->
+    <!--O name é mais útil no HTML e PHP e já o id é mais útil no javascript. Por isso é necessário identificar todo campo de entrada com o LABEL.-->
+
+</body>
+</html>
