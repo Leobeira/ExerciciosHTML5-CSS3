@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <h1>Teste de formulário com get</h1>
+
+    <form action="cadastro.php" method="POST" autocomplete="on"></form> <!--Optaremos pelo post, pois iremos pedir para digitar senha
+    Quando ligamos o autocomplete, devemos em cada caixa de input identificar qual é de qual, como veremos abaixo-->
+    <p>
+        <label for="iusu">Usuário: </label>
+        <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" placeholder="mínimo 5 letras" size="18" autocomplete="username">
+    </p><!--Podemos criar com div também.
+    Caso queira colocar limite de mínimo 5 letras e máximo 15 letras para nome, usa-se o minlenght e maxlenght-->
+
+    <p>
+        <label for="isen">Senha: </label>
+        <input type="password" name="sen" id="isen" required minlength="8" maxlength="16" placeholder="mínimo 8 caracteres" size="20" autocomplete="current-password"> <!--Required significa obrigatório
+        E se quiser colocar o size, ele vai ter o tamanho de aproximadamente quantas letras você quer mostrar.
+    Current-password é para quando sugere a senha de usuário já existente. Já o New-Password é para quando usamos ao cadastrar novos usuários.-->
+    </p>
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar"> <!--Limpar-->
+    </p>
+
+</body>
+</html>
