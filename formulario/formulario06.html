@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário de cores</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on"> <!--Quando utilizar este tipo de controle de envio de arquivos, temos que usar o médoto post e não get-->
+
+        <p>
+            <label for="icolor"></label>
+            <input type="color" name="cor" id="icor" value="#00ff00"> <!--Podemos já começar padronizando uma cor-->
+        </p>
+
+        <p>
+            <label for="inivel">Nível de Satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="10" value="5"> <!--Valuer é o padão inicial que colocamos-->
+        </p> <!--Por padrão é de 0 a 100, mas neste caso, configuramos de 1 à 10-->
+
+        <p>
+            <label for="ifoto">Foto do Perfil:</label>
+            <input type="file" name="foto" id="ifoto"> <!--Também temos o image mas o image é você quem coloca a foto e o file é o visitando que coloca a foto ou imagem que ele quer
+            ...-->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
