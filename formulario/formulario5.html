@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imasc" value="M"> <label for="imasc">Masculino</label>
+            <input type="radio" name="sexo" id="ifem" value="F"> <label for="ifem">Feminino</label>
+        </fieldset><!--Lembre-se que no caso de "radio", devemos manter o mesmo name para ambas as opções, pois se deixarmos como os de baixo, ele não irá selecionar apenas 1 elemento, e sim, todos, não tendo como desmarcar.-->
+
+        <fieldset> <!--Se mantes sem o br, ele ficará um ao lado do outro.
+        Outro ponto, se usar o checked em frente do objeto, ele já começa marcado, como exemplo abaixo -->
+            
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="basq" id="ibasq" checked> <label for="ibasq">Basquete</label> <br>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="nat" id="inat"> <label for="inat">Natação</label> <br>
+            <input type="checkbox" name="tenis" id="itenis"> <label for="itenis">Tênis</label> <br>
+        </fieldset> <!--Não esquecer de envelopar o nome do objeto com um label para relacionar o nome ao box.-->
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
