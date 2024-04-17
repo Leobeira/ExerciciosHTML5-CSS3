@@ -1,3 +1,8 @@
 @charset "UTF-8";
 
 /*Aparelho em pé*/
+
+body {
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom;/*Isso para colar a imagem na esquerda e em baixo para não ficar com espaço quando aumenta a tela*/
+}

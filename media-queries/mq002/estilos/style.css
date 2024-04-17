@@ -1,3 +1,23 @@
 @charset "UTF-8";
 
 /*Configuração geral*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(53, 32, 32);
+    background-size: contain; /*para caber a imagem inteira na tela*/
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: aliceblue;
+    text-shadow: 3px 3px 0px rgb(24, 15, 15);
+    padding: 10px;
+}
