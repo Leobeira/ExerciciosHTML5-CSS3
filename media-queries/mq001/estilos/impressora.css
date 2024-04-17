@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/*Estilos para impressora*/
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+menu {
+    display: none;
+} /*Isso display none é para não imprimir os ítens de menus, que não são necessários.*/
+
+article {
+    width: 100%;
+}
+
+article::after {
+    content: 'Este artico foi publicado através do site www.fulano.com.br';
+}/*Isso é mais para deixar o final da impressão com uma propaganda ou uma fonte de onde foi impresso*/
+
