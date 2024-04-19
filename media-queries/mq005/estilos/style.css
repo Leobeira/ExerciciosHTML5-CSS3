@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/*Versão para Celular*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body, html {
+    background-color: bisque;
+}
+
+header {
+    background-color: grey;
+
+}
+
+header > h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+span#burger {
+    background-color: rgb(79, 78, 78);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer; /*Para o ponteiro do mouse virar uma mãozinha*/
+}
+
+span#burger:hover {
+    background-color: white;
+    color: black;
+}
+
+menu {
+    /*display: block; Para esconder o menu, devemos usar o display none*/
+    display: none;
+}
+
+menu > ul {
+    list-style-type: none; /*Para tirar os sinais de bolinhas pretas da frente*/
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none; /*para remover o sublinhado do link*/
+    background-color: rgb(173, 173, 173);
+    color: white;
+    text-align: center;
+    border-top: 2px solid grey;
+}
+
+menu > ul > li > a:hover {
+    background-color: lightgray;
+}
+
+main {
+    width: 90vw;
+    background-color: white;
+    margin: auto; /*centralizar*/
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+article > h2 {
+    padding-bottom: 20px;
+}
+
+article > p {
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px; /*para espaçar o início de cada parágrafo*/
+}
